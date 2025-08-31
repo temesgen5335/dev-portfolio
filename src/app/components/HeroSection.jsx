@@ -39,7 +39,7 @@ const HeroSection = () => {
               Let&apos;s Connect
             </Link>
             <Link
-              href="/"
+              href="https://drive.google.com/file/d/11BpXgrwHsr1fxP6GAi7FSk1XeiCez4X9/view?usp=sharing"
               className="px-6 py-3 rounded-full bg-white/10 border border-[#4b50b3] hover:bg-white/20 text-white font-medium transition-all duration-300 text-center"
             >
               Download CV
