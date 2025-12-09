@@ -3,7 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import AviProfile from "./AviProfile";
-import { Card } from "./ui/card"
+// import { Card } from "./ui/card"
 
 const HeroSection = () => {
   return (
@@ -42,7 +42,7 @@ const HeroSection = () => {
               Let&apos;s Connect
             </Link>
             <Link
-              href="https://drive.google.com/file/d/11BpXgrwHsr1fxP6GAi7FSk1XeiCez4X9/view?usp=sharing"
+              href="https://drive.google.com/file/d/1poYpGrmwtftwtR8gP8S69zJ-lTOiD7rA/view?usp=sharing"
               className="px-6 py-3 rounded-full bg-white/10 border border-[#BF7632] hover:bg-white/20 text-white font-medium transition-all duration-300 text-center"
             >
               Download CV
