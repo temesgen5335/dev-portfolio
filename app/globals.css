@@ -1,0 +1,227 @@
+/* -----------------------------------------------------------
+   YOUR ORIGINAL GLOBAL CSS (kept 100% untouched)
+----------------------------------------------------------- */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+.bg-gradient-theme {
+  background: #121212;
+  color: white;
+}
+
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #4A5568 transparent;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.gradient-animation {
+  background: linear-gradient(270deg, #6366f1, #ec4899, #8b5cf6);
+  background-size: 200% 200%;
+  animation: gradient 6s ease infinite;
+}
+
+.card-hover-effect {
+  transition: all 0.3s ease;
+}
+
+.card-hover-effect:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+@layer base {
+  body {
+    @apply bg-[#121212];
+  }
+}
+
+.gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-[#4b50b3] to-[#6f74d3];
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 640px) {
+  .container {
+    @apply px-4;
+  }
+}
+
+
+/* -----------------------------------------------------------
+   NEW SPACE-THEME (NAMESPACED AND SAFE)
+----------------------------------------------------------- */
+
+@import "tw-animate-css";
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+/* All new theme styles are wrapped in .space-theme */
+
+.space-theme {
+  /* Space color tokens */
+  --space-dark: oklch(0.08 0.02 250);
+  --space-blue: oklch(0.25 0.08 250);
+  --space-blue-light: oklch(0.55 0.06 240);
+  --nebula-pink: oklch(0.65 0.22 350);
+  --nebula-gold: oklch(0.75 0.15 60);
+  --star-white: oklch(0.98 0 0);
+
+  --background: var(--space-dark);
+  --foreground: var(--star-white);
+
+  --card: oklch(0.12 0.02 250);
+  --card-foreground: var(--star-white);
+
+  --popover: oklch(0.12 0.02 250);
+  --popover-foreground: var(--star-white);
+
+  --primary: var(--nebula-pink);
+  --primary-foreground: var(--star-white);
+
+  --secondary: var(--space-blue);
+  --secondary-foreground: var(--star-white);
+
+  --muted: oklch(0.2 0.04 250);
+  --muted-foreground: var(--space-blue-light);
+
+  --accent: var(--nebula-gold);
+  --accent-foreground: var(--space-dark);
+
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: var(--star-white);
+
+  --border: var(--space-blue);
+  --input: var(--space-blue);
+  --ring: var(--nebula-pink);
+
+  --chart-1: var(--nebula-pink);
+  --chart-2: var(--space-blue-light);
+  --chart-3: var(--nebula-gold);
+  --chart-4: oklch(0.6 0.15 300);
+  --chart-5: oklch(0.7 0.12 180);
+
+  --radius: 0.5rem;
+
+  /* Sidebar */
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.145 0 0);
+  --sidebar-primary: oklch(0.205 0 0);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.97 0 0);
+  --sidebar-accent-foreground: oklch(0.205 0 0);
+  --sidebar-border: oklch(0.922 0 0);
+  --sidebar-ring: oklch(0.708 0 0);
+}
+
+/* Dark mode override inside space theme */
+.space-theme.dark {
+  --background: oklch(0.145 0 0);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.145 0 0);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.145 0 0);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.985 0 0);
+  --primary-foreground: oklch(0.205 0 0);
+  --secondary: oklch(0.269 0 0);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.708 0 0);
+  --accent: oklch(0.269 0 0);
+  --accent-foreground: oklch(0.985 0 0);
+  --border: oklch(0.269 0 0);
+  --input: oklch(0.269 0 0);
+  --ring: oklch(0.439 0 0);
+  --chart-1: oklch(0.488 0.243 264.376);
+  --chart-2: oklch(0.696 0.17 162.48);
+  --chart-3: oklch(0.769 0.188 70.08);
+  --chart-4: oklch(0.627 0.265 303.9);
+  --chart-5: oklch(0.645 0.246 16.439);
+}
+
+/* Space-theme base layer */
+@layer base {
+  .space-theme, 
+  .space-theme * {
+    @apply border-border outline-ring/50;
+  }
+
+  .space-theme {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Space-theme utilities */
+@layer utilities {
+  .space-theme .font-arcade {
+    font-family: "Press Start 2P", monospace;
+    line-height: 1.6;
+  }
+
+  @keyframes float-space {
+    0%,100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+  }
+
+  @keyframes glow-space {
+    0%,100% {
+      text-shadow: 0 0 20px var(--nebula-pink), 0 0 40px var(--nebula-pink);
+    }
+    50% {
+      text-shadow: 0 0 30px var(--nebula-pink), 0 0 60px var(--nebula-pink);
+    }
+  }
+
+  .space-theme .animate-float {
+    animation: float-space 6s ease-in-out infinite;
+  }
+
+  .space-theme .animate-glow {
+    animation: glow-space 2s ease-in-out infinite;
+  }
+
+  .space-theme .shadow-glow-pink {
+    box-shadow: 0 0 30px rgba(255, 107, 157, 0.5),
+                0 0 60px rgba(255, 107, 157, 0.3);
+  }
+}
