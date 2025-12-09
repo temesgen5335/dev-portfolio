@@ -59,6 +59,9 @@ importers:
       react-icons:
         specifier: ^5.5.0
         version: 5.5.0(react@19.2.1)
+      react-intersection-observer:
+        specifier: ^10.0.0
+        version: 10.0.0(react-dom@19.2.1(react@19.2.1))(react@19.2.1)
       react-type-animation:
         specifier: ^3.1.0
         version: 3.2.0(prop-types@15.8.1)(react-dom@19.2.1(react@19.2.1))(react@19.2.1)
@@ -80,9 +83,6 @@ importers:
       three:
         specifier: ^0.173.0
         version: 0.173.0
-      tw-animate-css:
-        specifier: ^1.4.0
-        version: 1.4.0
     devDependencies:
       '@types/node':
         specifier: 24.10.2
@@ -90,6 +90,9 @@ importers:
       '@types/react':
         specifier: 19.2.7
         version: 19.2.7
+      tw-animate-css:
+        specifier: ^1.4.0
+        version: 1.4.0
 
 packages:
 
@@ -2555,6 +2558,15 @@ packages:
     resolution: {integrity: sha512-MEFcXdkP3dLo8uumGI5xN3lDFNsRtrjbOEKDLD7yv76v4wpnEq2Lt2qeHaQOr34I/wPN3s3+N08WkQ+CW37Xiw==}
     peerDependencies:
       react: '*'
+
+  react-intersection-observer@10.0.0:
+    resolution: {integrity: sha512-JJRgcnFQoVXmbE5+GXr1OS1NDD1gHk0HyfpLcRf0575IbJz+io8yzs4mWVlfaqOQq1FiVjLvuYAdEEcrrCfveg==}
+    peerDependencies:
+      react: ^17.0.0 || ^18.0.0 || ^19.0.0
+      react-dom: ^17.0.0 || ^18.0.0 || ^19.0.0
+    peerDependenciesMeta:
+      react-dom:
+        optional: true
 
   react-intersection-observer@8.34.0:
     resolution: {integrity: sha512-TYKh52Zc0Uptp5/b4N91XydfSGKubEhgZRtcg1rhTKABXijc4Sdr1uTp5lJ8TN27jwUsdXxjHXtHa0kPj704sw==}
@@ -5730,6 +5742,12 @@ snapshots:
   react-icons@5.5.0(react@19.2.1):
     dependencies:
       react: 19.2.1
+
+  react-intersection-observer@10.0.0(react-dom@19.2.1(react@19.2.1))(react@19.2.1):
+    dependencies:
+      react: 19.2.1
+    optionalDependencies:
+      react-dom: 19.2.1(react@19.2.1)
 
   react-intersection-observer@8.34.0(react@19.2.1):
     dependencies:

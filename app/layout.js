@@ -1,3 +1,5 @@
+// @import "tw-animate-css";
+
 import './globals.css'
 import { Inter } from 'next/font/google'
 import React from "react"

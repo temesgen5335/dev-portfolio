@@ -1,14 +1,10 @@
-
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 
-@layer utilities {
-  @import 'tw-animate-css/utilities';
-}
 
 :root {
   --foreground-rgb: 0, 0, 0;
