@@ -1,10 +1,14 @@
-/* -----------------------------------------------------------
-   YOUR ORIGINAL GLOBAL CSS (kept 100% untouched)
------------------------------------------------------------ */
+
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+@layer utilities {
+  @import 'tw-animate-css/utilities';
+}
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -87,13 +91,6 @@ html {
   }
 }
 
-
-/* -----------------------------------------------------------
-   NEW SPACE-THEME (NAMESPACED AND SAFE)
------------------------------------------------------------ */
-
-@import "tw-animate-css";
-@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 
 /* All new theme styles are wrapped in .space-theme */
 
