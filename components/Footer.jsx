@@ -23,7 +23,7 @@ const Footer = () => {
       <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
         <div className="mb-4 md:mb-0">
           <Link href={"/"} className="text-xl md:text-3xl text-neonCy font-semibold">
-            TOM<span className="text-[#BF7632]">.DEV</span>
+            Temesgen<span className="text-[#BF7632]">G</span>
           </Link>
         </div>
         <div className="flex space-x-4 mb-4 md:mb-0">

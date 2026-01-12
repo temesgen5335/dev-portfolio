@@ -50,7 +50,7 @@ const Navbar = () => {
           href="/"
           className="text-2xl md:text-3xl text-white font-semibold"
         >
-          TOM<span className="text-[#BF7632]">.DEV</span>
+          Temesgen<span className="text-[#BF7632]">G</span>
         </Link>
         
         <div className="mobile-menu block md:hidden">
