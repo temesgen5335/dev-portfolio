@@ -68,6 +68,15 @@ const projects = [
         tags: ["AI/ML", "computer-vision", "openCV", "yollo"],
         repo: "https://github.com/temesgen5335/Automated-Storyboard-Synthesis-for-Digital-Advertising.git",
     },
+    {
+        title: "Hook Lab: Video editing agency website",
+        shortDescription: "Hook Lab is an agency portfolio website built using Next.js, tailwindCSS, framer-motion and shadcn-ui.",
+        fullDescription: "Hook Lab is an agency portfolio website built using Next.js, tailwindCSS, framer-motion and shadcn-ui. The website showcases the services offered by Hook Lab, a video editing agency, and provides information about their team, portfolio, and contact details.",
+        images: ["/images/projects/hook-lab1.png", "/images/projects/hook-lab2.png", "/images/projects/hook-lab4.png", "/images/projects/hook-lab3.png"],
+        tags: ["Nextjs", "Shadcn-ui", "TailwindCSS"],
+        live: "https://v0-hook-lab.vercel.app",
+        repo: "https://github.com/temesgen5335/hook-lab-agency.git",
+    },
 ];
 
 export default function Projects() {

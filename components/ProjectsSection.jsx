@@ -7,12 +7,38 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
+    title: "Hook Lab: Video editing agency website",
+    description: "Hook Lab is an agency portfolio website built using Next.js, tailwindCSS, framer-motion and shadcn-ui. The website showcases the services offered by Hook Lab, a video editing agency, and provides information about their team, portfolio, and contact details.",
+    image: "/images/projects/hook-lab1.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/temesgen5335/hook-lab-agency.git",
+    previewUrl: "/projects",
+  },
+  {
+    title: "Chronos Finance",
+    description: "Chronos Inc. is a next-gen, AI-powered financial super app that redefines personal finance through biometric-first security and intelligent automation.",
+    tag: ["All", "AI/ML", "Web"],
+    previewUrl: "https://chronos-finance.vercel.app",
+    image: "/images/projects/chronos1.png",
+    gitUrl: "/",
+  },
+  {
+    id: 7,
     title: "Ethiopian Startup Community platform",
     description: "A unified and thriving Ethiopian startup community platform, where entrepreneurs, investors, government bodies, and other ecosystem builders and support organizations collaborate to accelerate startup growth and innovation. Built an inclusive, accessible, and sustainable digital platform that connects and supports all stakeholders of the startup ecosystem—entrepreneurs, investors, accelerators, incubators, training providers, and government agencies—in fostering the growth and development of startups in Ethiopia.",
     image: "/images/projects/1.png",
     tag: ["All", "Web"],
     gitUrl: "/",
     previewUrl: "/projects",
+  },
+  {
+    id:8,
+    title: "SolveIT AI Powered Call Center",
+    description: "An AI-powered call center solution for businesses.",
+    tag: ["All", "AI/ML"],
+    previewUrl: "https://solveit.digital",
+    image: "/images/projects/solveit1.png",
+    gitUrl: "/",
   },
   {
     id: 2,
@@ -59,6 +85,7 @@ const projectsData = [
     gitUrl: "https://github.com/temesgen5335/Automated-Storyboard-Synthesis-for-Digital-Advertising.git",
     previewUrl: "/projects",
   },
+
 ];
 
 const ProjectsSection = () => {
